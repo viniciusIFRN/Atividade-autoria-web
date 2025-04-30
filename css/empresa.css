@@ -1,0 +1,30 @@
+.formulario{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 320px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    text-align: center;
+}
+.formulario input{
+    width: 500px;
+    height: 20px;
+}
+.formulario label{
+   font-size: 25px;
+   color: rgb(15, 10, 80);
+}
+.formulario h1{
+    color: rgba(13, 7, 92, 0.5);
+}
+.formulario button{
+    font-size: 20px;
+    display: block;
+    margin-left: 840px;
+}
+.outros p{
+    text-align: center;
+    font-size: 24px;
+    color: blueviolet;
+}
