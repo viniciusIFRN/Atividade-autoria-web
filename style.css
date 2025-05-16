@@ -1,0 +1,12 @@
+.titulo {
+    background-color: blue;
+    color: white;
+}
+
+.containertext-center h1{
+    background-color: blue; /* Cor de fundo azul */
+    width: 100%;             /* Ocupa toda a largura da página */
+    text-align: left;      /* Centraliza o texto */
+
+}
+
