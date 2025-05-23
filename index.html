@@ -1,20 +1,39 @@
 <!--site que aparece materiais de estudos para reforçar os conteúdos dados em sala ou algum outro material visto por fora. -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<div class="containertext-center">
-    <h1 class="titulo">Materiais de estudo</h1><br>
-    <input type="text" value="1" class="boxed-input">
-  </div>
-  
+
 <body>
-    
+  <header class="topo">
+    <h1>Materiais de estudo</h1>
+    <i id="burguer" class="material-icons" onclick="funcao()">menu</i>
+    <nav id="menu">
+      <ul>
+        <li><a href="#">Opção 1</a></li>
+        <li><a href="#">Opção 1</a></li>
+        <li><a href="#">Opção 1</a></li>
+        <li><a href="#">Opção 1</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+  function funcao() {
+    const menu = document.getElementById("menu");
+    if (menu.style.display == "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+</script>
 </body>
 
 </html>

@@ -1,12 +1,39 @@
-.titulo {
-    background-color: blue;
-    color: white;
-}
-
-.containertext-center h1{
-    background-color: blue; /* Cor de fundo azul */
-    width: 100%;             /* Ocupa toda a largura da página */
-    text-align: left;      /* Centraliza o texto */
+.topo h1{
+    background-color: blue; 
+    width: 100%;             
+    text-align: left;     
 
 }
 
+i#burguer {
+  background-color: rgb(65, 64, 64);
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+}
+
+i#burguer:hover {
+  background-color: black;
+  color: lightcoral;
+}
+#menu {
+  display: none;
+}
+
+ul >li > a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-align: left;
+  background-color: rgb(87, 87, 87);
+  color: white;
+  border-top: 2px solid gray;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
