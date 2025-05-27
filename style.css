@@ -1,46 +1,68 @@
-.topo h1{
-  background-color: rgb(197, 197, 197); 
-  width: 100%;             
-  text-align: center;     
-
+/* Título do topo */
+.topo h1 {
+  background-color: #c5c5c5;
+  width: 20%;
+  text-align: center;
+  float: right;
 }
 
-i#burguer {
-  background-color: rgb(52, 98, 176);
-  display: inline;
+/* Ícone do menu (hambúrguer) */
+#burguer {
+  background-color: #3462b0;
   color: white;
-  text-align: left;
   padding: 10px;
   cursor: pointer;
 }
 
-i#burguer:hover {
-  background-color: black;
+#burguer:hover {
+  background-color: rgb(32, 2, 85);
   color: white;
 }
 
+/* Container do menu (ícone + texto + nav) */
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  position: relative;
+}
+
+/* Texto "Disciplinas" */
+.menu-label {
+  background-color: #3462b0;
+  color: white;
+  padding: 14px;
+  font-weight: bold;
+  font-family: sans-serif;
+  width: 228px;
+  border-radius: 0px;
+  line-height: 1;
+  text-align: left;
+}
+
+/* Menu suspenso */
 #menu {
   display: none;
+  width: 300px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #3462b0;
+  z-index: 10;
 }
 
-ul >li > a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  text-align: left;
-  background-color: rgb(52, 98, 176);
-  color: white;
-  border-top: 2px solid gray;
-}
-
+/* Estilo da lista do menu */
 #menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.topo span {
-  background-color:rgb(52, 98, 176);
-  color: white;
+/* Links dentro do menu */
+#menu a {
+  display: block;
   padding: 10px;
+  text-decoration: none;
+  color: white;
+  border-top: 2px solid gray;
 }
