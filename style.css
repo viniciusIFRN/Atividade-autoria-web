@@ -1,10 +1,16 @@
-/* Título do topo */
-.topo h1 {
-  background-color: #c5c5c5;
-  width: 20%;
-  text-align: center;
-  float: right;
-}
+/* Título do topo 
+.barra-azul {  
+  background-color: #2c5aa0;
+  width: 220px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}*/
 
 /* Ícone do menu (hambúrguer) */
 #burguer {
@@ -28,7 +34,7 @@
 }
 
 /* Texto "Disciplinas" */
-.menu-label {
+.menu-wrapper span {
   background-color: #3462b0;
   color: white;
   padding: 14px;
@@ -60,9 +66,14 @@
 
 /* Links dentro do menu */
 #menu a {
-  display: block;
+  display: flex; /* Flexbox para alinhar ícone + texto */
   padding: 10px;
   text-decoration: none;
   color: white;
   border-top: 2px solid gray;
+  gap: 8px; /* Espaço entre ícone e texto */
+}
+
+#menu a i.material-icons{
+  font-size: 20px; /* Tamanho do ícone */
 }
