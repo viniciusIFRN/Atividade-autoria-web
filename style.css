@@ -1,7 +1,7 @@
 .barra-lateral {
-  background-color: #2c5aa0;
+  background-color: white;
   width: 220px;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   padding-top: 5px;
   color: white;
@@ -46,7 +46,7 @@
 /* Menu suspenso */
 #menu {
   display: none;
-  width: 300px;
+  width: 210px;
   position: absolute;
   top: 100%;
   left: 0;
