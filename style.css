@@ -1,13 +1,16 @@
 .barra-lateral {
   background-color: white;
   width: 220px;
-  height: 100%;
+  height: 100vh; /* Garante que ocupe toda a altura da tela */
   position: fixed;
+  top: 0;        /* Cola no topo */
+  left: 0;       /* Cola na lateral esquerda */
   padding-top: 5px;
   color: white;
-  display: flex;
+  display: block;
   flex-direction: column;
 }
+
 
 /* Ícone do menu (hambúrguer) */
 #burguer {
@@ -15,10 +18,11 @@
   color: white;
   padding: 10px;
   cursor: pointer;
+  display: block;
 }
 
 #burguer:hover {
-  background-color: rgb(32, 2, 85);
+  background-color: rgb(85, 33, 175);
   color: white;
 }
 
@@ -32,6 +36,7 @@
 
 /* Texto "Disciplinas" */
 .menu-wrapper span {
+  display: none;
   background-color: #3462b0;
   color: white;
   padding: 14px;
@@ -39,7 +44,6 @@
   font-family: sans-serif;
   width: 228px;
   border-radius: 0px;
-  line-height: 1;
   text-align: left;
 }
 
@@ -49,9 +53,7 @@
   width: 210px;
   position: absolute;
   top: 100%;
-  left: 0;
   background-color: #3462b0;
-  z-index: 10;
 }
 
 /* Estilo da lista do menu */
@@ -59,6 +61,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  left: 0;
 }
 
 /* Links dentro do menu */
@@ -73,4 +76,15 @@
 
 #menu a i.material-icons{
   font-size: 20px; /* Tamanho do ícone */
+  color: rgb(104, 204, 207);
+}
+
+.if {
+  display: block;
+  width: 40px;
+  height: 40px; /* Garante que ocupe toda a altura da tela */
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
 }
