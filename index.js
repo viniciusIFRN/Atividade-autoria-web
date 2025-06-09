@@ -2,10 +2,11 @@ function funcao() {
     const menu = document.getElementById("menu");
     const span = document.getElementById("spam");
     const barra = document.getElementsByClassName("barra-lateral")[0];
+    const corpo = document.getElementById("corpo");
     
     if (menu.style.display === "block") {
       menu.style.display = "none";
-      barra.style.backgroundColor = "white";
+      barra.style.backgroundColor = getComputedStyle(corpo).backgroundColor;
       span.style.display = "none"
     } else {
       menu.style.display = "block";

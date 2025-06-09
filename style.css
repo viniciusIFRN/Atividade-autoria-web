@@ -1,5 +1,4 @@
 .barra-lateral {
-  background-color: white;
   width: 220px;
   height: 100vh; /* Garante que ocupe toda a altura da tela */
   position: fixed;
@@ -87,4 +86,14 @@
   right: 10px;
   top: 10px;
   cursor: pointer;
+}
+
+.infov {
+  display: flex;
+  width: 300px;
+  margin: 100px auto;
+}
+
+body {
+  background-color: black;
 }
