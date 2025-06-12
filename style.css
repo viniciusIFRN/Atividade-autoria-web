@@ -13,7 +13,7 @@
 
 /* Ícone do menu (hambúrguer) */
 #burguer {
-  background-color: #3462b0;
+  background-color: #4d2a50;
   color: white;
   padding: 10px;
   cursor: pointer;
@@ -36,7 +36,7 @@
 /* Texto "Disciplinas" */
 .menu-wrapper span {
   display: none;
-  background-color: #3462b0;
+  background-color: #4d2a50;
   color: white;
   padding: 14px;
   font-weight: bold;
@@ -52,7 +52,7 @@
   width: 210px;
   position: absolute;
   top: 100%;
-  background-color: #3462b0;
+  background-color: #4d2a50;
 }
 
 /* Estilo da lista do menu */
@@ -90,10 +90,10 @@
 
 .infov {
   display: flex;
-  width: 300px;
-  margin: 100px auto;
+  width: 500px;
+  margin: 200px auto;
 }
 
 body {
-  background-color: black;
+  background-color: #171a14;
 }
