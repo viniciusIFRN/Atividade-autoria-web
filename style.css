@@ -1,3 +1,13 @@
+h1 {
+  position: sticky;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  margin-top: 1px;
+  zoom: 120%;
+}
+
+
 .barra-lateral {
   width: 220px;
   height: 100vh; /* Garante que ocupe toda a altura da tela */
@@ -8,6 +18,7 @@
   color: white;
   display: block;
   flex-direction: column;
+  transition: all 5s;
 }
 
 
@@ -41,7 +52,7 @@
   padding: 14px;
   font-weight: bold;
   font-family: sans-serif;
-  width: 228px;
+  min-width: 138px;
   border-radius: 0px;
   text-align: left;
 }
@@ -69,7 +80,6 @@
   padding: 10px;
   text-decoration: none;
   color: white;
-  border-top: 2px solid gray;
   gap: 8px; /* Espaço entre ícone e texto */
 }
 
