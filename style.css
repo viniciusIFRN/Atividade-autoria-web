@@ -18,7 +18,7 @@ h1 {
   color: white;
   display: block;
   flex-direction: column;
-  transition: all 5s;
+  transition: all 0.5s;
 }
 
 
@@ -45,8 +45,11 @@ h1 {
 }
 
 /* Texto "Disciplinas" */
-.menu-wrapper span {
-  display: none;
+#spam {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
   background-color: #4d2a50;
   color: white;
   padding: 14px;
@@ -57,13 +60,28 @@ h1 {
   text-align: left;
 }
 
+/* Classe ativa para mostrar suavemente */
+#spam.ativo {
+  opacity: 1;
+  max-height: 100px;
+}
+
 /* Menu suspenso */
 #menu {
-  display: none;
+  opacity: 0;
+  max-height: 0; /* funciona como um display: none mas da pra animar */
+  overflow: hidden; /* impede que o conteúdo apareça enquanto max-height: 0. */
+  transition: opacity 0.5s ease, max-height 0.5s ease; /*quando max-height ou opacity mudarem, 
+  leve 0.5 segundos para aplicar a nova configuração, de forma suave (ease).*/
+  background-color: #4d2a50;
   width: 210px;
   position: absolute;
   top: 100%;
-  background-color: #4d2a50;
+}
+
+#menu.ativo {
+  opacity: 1;
+  max-height: 500px; /* altura suficiente para mostrar os itens */
 }
 
 /* Estilo da lista do menu */
@@ -81,6 +99,7 @@ h1 {
   text-decoration: none;
   color: white;
   gap: 8px; /* Espaço entre ícone e texto */
+  transition: all 5s;
 }
 
 #menu a i.material-icons{
@@ -100,8 +119,13 @@ h1 {
 
 .infov {
   display: flex;
-  width: 500px;
-  margin: 200px auto;
+  width: 450px;
+  margin: 1px auto;
+}
+
+.logo_texto{
+  display: block;
+  width: 410px;
 }
 
 body {

@@ -5,14 +5,14 @@ const corpo = document.getElementById("corpo");
 const infov = document.getElementsByClassName("infov")[0];
 
 function Menu() {
-  if (menu.style.display === "block") {
-    menu.style.display = "none";
+ if (menu.classList.contains("ativo")) {
+   menu.classList.remove("ativo");
+    span.classList.remove("ativo");
     barra.style.backgroundColor = getComputedStyle(corpo).backgroundColor;
-    span.style.display = "none";
   } else {
-    menu.style.display = "block";
+    menu.classList.add("ativo");
+    span.classList.add("ativo");
     barra.style.backgroundColor = "#4d2a50";
-    span.style.display = "block";
   }
 }
 
