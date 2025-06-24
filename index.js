@@ -19,7 +19,3 @@ function Menu() {
 function inicio() {
   window.location.href = "index.html";
 }
-
-function selecionar() {
-  infov.style.display = "none";
-}

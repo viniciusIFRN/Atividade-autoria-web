@@ -19,6 +19,8 @@ h1 {
   display: block;
   flex-direction: column;
   transition: all 0.5s;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
 }
 
 
@@ -58,6 +60,7 @@ h1 {
   min-width: 138px;
   border-radius: 0px;
   text-align: left;
+  border-top-right-radius: 35px;
 }
 
 /* Classe ativa para mostrar suavemente */
