@@ -1,7 +1,19 @@
 import { useRef } from 'react';
 import './style.css';
+import { useEffect, useState } from 'react';
 
 function Portal() {
+  const [mostrarMensagem, setMostrarMensagem] = useState(true);
+
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setMostrarMensagem(false);
+  }, 4000); // 5 segundos
+
+  return () => clearTimeout(timer); // limpa o timer se desmontar
+}, []);
+
+
   const menuRef = useRef(null);
   const spanRef = useRef(null);
   const barraRef = useRef(null);
@@ -31,7 +43,7 @@ function Portal() {
   return (
     <div id="corpo" ref={corpoRef}>
       <h1>
-        <img src="/public/portal_texto.PNG" alt="portal logo" className="logo_texto" />
+      &#60;&#47;Portal_de_Estudos&#47;&#62;
       </h1>
       <img src="/public/logo.png" alt="logo do IF" className="if" onClick={inicio} />
       <img src="/public/INFO V.png" alt="logo de infoV" className="infov" />
