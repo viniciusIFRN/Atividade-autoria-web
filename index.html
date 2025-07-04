@@ -1,51 +1,14 @@
-<!--site que aparece materiais de estudos para reforçar os conteúdos dados em sala ou algum outro material visto por fora. -->
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body id="corpo">
-  <h1> <!--e isso (amilton)-->
-    <img src="imagens/portal_texto.PNG" alt="portal logo" class="logo_texto">
-  </h1>
-
-  <img src="imagens/logo.png" alt="logo do IF" class="if" onclick="inicio()">
-  <img src="imagens/INFO V.png" alt="logo de infoV" class="infov">
-
-  <header class="barra-lateral">
-    <div class="menu-wrapper">
-      <i id="burguer" class="material-icons" onclick="Menu()">menu</i>
-      <span id="spam">Disciplinas</span>
-
-      <nav id="menu">
-        <ul>
-          <li><a href="#"><i class="material-icons">calculate</i> Matemática </a></li>
-          <li><a href="#"><i class="material-icons">science</i>Química</a></li>
-          <li><a href="#"><i class="material-icons">biotech</i>Biologia</a></li>
-          <li><a href="#"><i class="material-icons">language</i>Português / Redação</a></li>
-          <li><a href="#"><i class="material-icons">castle</i>História</a></li>
-          <li><a href="#"><i class="material-icons">lightbulb</i>Filosofia</a></li>
-          <li><a href="#"><i class="material-icons">lan</i>Redes</a></li>
-          <li><a href="#"><i class="material-icons">build</i>Manutenção</a></li>
-          <li><a href="#"><i class="material-icons">memory</i>Banco de dados</a></li>
-          <li><a href="#"><i class="material-icons">computer</i>Autoria Web</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- SEÇÃO DE BOAS-VINDAS -->
-  <section class="boas-vindas">
-    <h2>Bem-vindo ao Portal de Estudos INFO V!</h2>
-    <p>Aqui você encontra materiais extras, revisões e reforços das aulas para te ajudar nos estudos.</p>
-  </section>
-
-  <script src="index.js"></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal info3V</title>
+  </head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
