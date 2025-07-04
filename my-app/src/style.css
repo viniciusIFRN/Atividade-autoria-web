@@ -1,0 +1,159 @@
+h1 {
+  position: sticky;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  margin-top: 1px;
+  zoom: 120%;
+}
+
+
+.barra-lateral {
+  width: 220px;
+  height: 100vh; /* Garante que ocupe toda a altura da tela */
+  position: fixed;
+  top: 0;        /* Cola no topo */
+  left: 0;       /* Cola na lateral esquerda */
+  padding-top: 5px;
+  color: white;
+  display: block;
+  flex-direction: column;
+  transition: all 0.5s;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+
+/* Ícone do menu (hambúrguer) */
+#burguer {
+  background-color: #4d2a50;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+#burguer:hover {
+  background-color: rgb(85, 33, 175);
+  color: white;
+}
+
+/* Container do menu (ícone + texto + nav) */
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  position: relative;
+}
+
+/* Texto "Disciplinas" */
+#spam {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+  background-color: #4d2a50;
+  color: white;
+  padding: 14px;
+  font-weight: bold;
+  font-family: sans-serif;
+  min-width: 138px;
+  border-radius: 0px;
+  text-align: left;
+  border-top-right-radius: 35px;
+}
+
+/* Classe ativa para mostrar suavemente */
+#spam.ativo {
+  opacity: 1;
+  max-height: 100px;
+}
+
+/* Menu suspenso */
+#menu {
+  opacity: 0;
+  max-height: 0; /* funciona como um display: none mas da pra animar */
+  overflow: hidden; /* impede que o conteúdo apareça enquanto max-height: 0. */
+  transition: opacity 0.5s ease, max-height 0.5s ease; /*quando max-height ou opacity mudarem, 
+  leve 0.5 segundos para aplicar a nova configuração, de forma suave (ease).*/
+  background-color: #4d2a50;
+  width: 210px;
+  position: absolute;
+  top: 100%;
+}
+
+#menu.ativo {
+  opacity: 1;
+  max-height: 500px; /* altura suficiente para mostrar os itens */
+}
+
+/* Estilo da lista do menu */
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  left: 0;
+}
+
+/* Links dentro do menu */
+#menu a {
+  display: flex; /* Flexbox para alinhar ícone + texto */
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  gap: 8px; /* Espaço entre ícone e texto */
+}
+
+#menu a i.material-icons{
+  font-size: 20px; /* Tamanho do ícone */
+  color: rgb(104, 204, 207);
+}
+
+.if {
+  display: block;
+  width: 40px;
+  height: 40px; /* Garante que ocupe toda a altura da tela */
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.infov {
+  display: flex;
+  width: 450px;
+  margin: 1px auto;
+}
+
+.logo_texto{
+  display: block;
+  width: 410px;
+}
+
+body {
+  background-color: #171a14;
+}
+
+.boas-vindas {
+  margin-left: 250px;
+  margin-top: 30px;
+  padding: 25px;
+  background: linear-gradient(135deg, #2c2f2a, #3e423d);
+  border-left: 5px solid #4d2a50;
+  border-radius: 10px;
+  color: #f0ecdd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+}
+
+.boas-vindas h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #9ce8eb;
+}
+
+.boas-vindas p {
+  font-size: 18px;
+  line-height: 1.6;
+}
