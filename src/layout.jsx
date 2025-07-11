@@ -56,7 +56,8 @@ import './style.css';
   return (
     <div id="corpo" ref={corpoRef}>
       <h1>&lt;/Portal_de_Estudos/&gt;</h1>
-      <img src="/logo.png" alt="logo do IF" className="if" onClick={irParaInicio} />
+  
+      <Link to="/"><i className="material-icons" onClick={irParaInicio} id='home'>home</i></Link>
 
       <header className="barra-lateral" ref={barraRef}>
         <div className="menu-wrapper">

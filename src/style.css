@@ -112,10 +112,12 @@ h1 {
   color: rgb(255, 255, 255);
 }
 
-.if {
+#home {
+  color: white;
   display: block;
   width: 40px;
   height: 40px; /* Garante que ocupe toda a altura da tela */
+  font-size: 40px;
   position: fixed;
   right: 10px;
   top: 10px;
