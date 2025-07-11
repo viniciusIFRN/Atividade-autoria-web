@@ -23,6 +23,7 @@ h1 {
   transition: all 0.5s;
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
+  z-index: 1000;
 }
 
 
@@ -108,7 +109,7 @@ h1 {
 
 #menu a i.material-icons{
   font-size: 20px; /* Tamanho do ícone */
-  color: rgb(104, 204, 207);
+  color: rgb(255, 255, 255);
 }
 
 .if {
